@@ -23,7 +23,16 @@ Enums são usados para representar um conjunto fixo de constantes.
 
 ## ▶️ Exemplo de uso
 
+✅ Como criar um Enum
+
 ```java
+public enum StatusPedido {
+    PENDENTE,
+    PROCESSANDO,
+    ENVIADO,
+    ENTREGUE
+}
+
 StatusPedido status = StatusPedido.PENDENTE;
 
 if (status == StatusPedido.PENDENTE) {
